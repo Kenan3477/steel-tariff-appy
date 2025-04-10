@@ -6,8 +6,8 @@ import requests
 
 st.set_page_config(page_title="Steel Landed Cost Estimator", layout="centered")
 st.title("🔩 Steel Landed Cost Estimator")
-st.markdown(\"\"\"
-Upload your steel product list to calculate total landed cost, including tariff and shipping.
+("""
+Upload your steel product list...
 
 📄 **Download the input CSV template:**
 [Click here to download](https://raw.githubusercontent.com/kenan3477/steel-tariff-app/main/Steel_Upload_Template.csv)
@@ -23,7 +23,7 @@ Ensure your CSV includes these columns:
 - Unit Value (£)
 - Shipping Cost (£)
 (Optional) Tariff Rate (%) — will be auto-filled if missing.
-\"\"\")
+""")
 
 # Load fallback tariff data
 try:

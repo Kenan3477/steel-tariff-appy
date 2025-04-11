@@ -1,3 +1,26 @@
+import streamlit_authenticator as stauth
+
+# Define user credentials
+names = ["Kenan Davies", "Jane Smith"]
+usernames = ["kenan", "jane"]
+passwords = ["demo123", "password456"]
+
+hashed_passwords = stauth.Hasher(passwords).generate()
+
+authenticator = stauth.Authenticate(
+    names, usernames, hashed_passwords,
+    "steel_auth", "steel_auth_cookie", cookie_expiry_days=30
+)
+
+name, authentication_status, username = authenticator.login("Login", "main")
+
+if authentication_status is False:
+    st.error("Username/password is incorrect")
+elif authentication_status is None:
+    st.warning("Please enter your username and password")
+elif authentication_status:
+    authenticator.logout("Logout", "sidebar")
+    st.sidebar.write(f"Welcome **{name}** 👋")
 
 import streamlit as st 
 import pandas as pd

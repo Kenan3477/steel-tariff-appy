@@ -9,7 +9,7 @@ import os
 st.set_page_config(page_title="Steel Tariff Cost Calculator", page_icon="🔩", layout="centered")
 
 # --- Load or create user database ---
-USER_DB = "users.csv"
+USER_DB = "/tmp/users.csv"
 
 if not os.path.exists(USER_DB):
     df_users = pd.DataFrame(columns=["name", "username", "email", "password"])

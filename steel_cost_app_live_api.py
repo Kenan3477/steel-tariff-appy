@@ -15,7 +15,7 @@ st.markdown("""
 Upload your steel product list to calculate total landed cost, including tariff and shipping.
 
 📄 **Download the input CSV template:**
-[Click here to download](https://raw.githubusercontent.com/kenan3477/steel-tariff-app/main/Steel_Upload_Template.csv)
+[Click here to download](https://raw.githubusercontent.com/kenan3477/steel-tariff-appy/main/Steel_Upload_Template.csv)
 
 💡 If you're not sure how to use this tool, fill out [this feedback form](https://docs.google.com/forms/d/e/1FAIpQLSf3BjAAcWyYWOu87Vmh85D3C56UWyafANJ47utCNz7Bkb01Jg/viewform?usp=header) to ask for help or improvements.
 

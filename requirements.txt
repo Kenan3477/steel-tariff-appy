@@ -3,3 +3,4 @@ pandas
 matplotlib
 requests
 streamlit-authenticator
+.streamlit/config.toml
